@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:padding="16dp">
+
+            <Button
+                android:layout_width="200dp"
+                android:id="@+id/l_eligibility"
+                android:layout_height="wrap_content"
+                android:background="@color/link"
+                android:padding="@dimen/pad_size"
+                android:text="Check loan eligibility" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/l_purpose"
+                android:padding="16dp"
+
+                android:hint="Purpose of loan"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/l_amount"
+                android:inputType="number"
+                android:padding="16dp"
+                android:hint="Amount applied for"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/l_installments"
+                android:inputType="number"
+                android:padding="16dp"
+                android:hint="Installments"
+                />
+
+
+
+
+            <Button
+                android:id="@+id/l_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_login_round"
+                android:padding="@dimen/pad_size"
+                android:text="Submit" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
