@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<!--    <com.flipboard.bottomsheet.BottomSheetLayout-->
+<!--        android:id="@+id/bottomsheet"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--        Top Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/pad_size"
+            android:layout_weight="1"
+            android:background="@drawable/round_top"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:adSize="BANNER"
+                    app:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+<!--                    app:adUnitId="ca-app-pub-9934904722828872~1328429002" />-->
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--        Middle layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/pad_size"
+            android:layout_weight="1"
+            android:background="@drawable/round_corners"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:onClick="applyLoan"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_apply_loan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_weight="1"
+                    android:text="Apply Loan" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:onClick="buyAirtime"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_airtime" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_weight="1"
+                    android:text="Buy Airtime" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:onClick="toMpesa"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_to_mpea" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_weight="1"
+                    android:text="Withdraw to Mpesa" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--        Bottom layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/pad_size"
+            android:layout_weight="1"
+            android:background="@drawable/round_bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:onClick="toFacebook"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/facebook" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_weight="1"
+                    android:text="@string/facebook" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:onClick="toTwitter"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/twitter" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_weight="1"
+                    android:text="@string/twitter" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:onClick="toWhatsApp"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/whatsapp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_weight="1"
+                    android:text="@string/whatsapp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+
+<!--            app:adUnitId="ca-app-pub-9934904722828872~1328429002" />-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<!--    </com.flipboard.bottomsheet.BottomSheetLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">My ads</string>
+    <string name="welcome">Welcome, please Login</string>
+    <string name="phone">07########</string>
+    <string name="pass">Secure password</string>
+    <string name="forgotpass">Forgot password?</string>
+    <string name="newUser">Sign up</string>
+    <string name="terms">Terms &amp; conditions</string>
+    <string name="createUser">Enter your details to create account</string>
+
+    <string name="first_name">FirstName</string>
+    <string name="last_name">Last Name</string>
+    <string name="other_name">Other Names (Optional)</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="id_number">National Id number</string>
+    <string name="date_of_birth">Date of birth (YYYY-MM-DD)</string>
+    <string name="create_account">Create Account</string>
+    <string name="login">Login</string>
+    <string name="borrower">Borrower</string>
+    <string name="loan_amount">Loan Amount</string>
+    <string name="fee">Service Charge</string>
+    <string name="coupon">Coupon</string>
+    <string name="apply">Submit</string>
+
+
+    <dimen name="pad_size">16dp</dimen>
+
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="whatsapp">Whatsapp</string>
+
+
+
+    <string name="quick_loan">Get access to quick loans</string>
+    <string name="crb_check">CRB Check</string>
+    <string name="instant_loan">Instant Funds to M-Pesa</string>
+    <string name="login_01">Already have an account? Login</string>
+    <string name="agreement">I accept these terms of use and Privacy Policy</string>
+    <string name="m_pin">Please set your new M-Banking Pin</string>
+
+    <color name="link">#74508d</color>
+
+    <string-array name="loan_duration">
+        <item>Specify loan duration ...</item>
+        <item>1 Week</item>
+        <item>2 Week</item>
+        <item>1 Month</item>
+        <item>2 Months</item>
+        <item>4 Months</item>
+        <item>6 Months</item>
+    </string-array>
+
+</resources>

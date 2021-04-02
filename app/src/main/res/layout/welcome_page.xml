@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/pad_size"
+        android:background="@drawable/round_corners">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/intro_text"
+                android:textSize="@dimen/pad_size"
+                android:gravity="center"
+                android:paddingBottom="@dimen/pad_size"
+                android:text="Instant Loans"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pesa"
+                android:paddingTop="@dimen/pad_size"
+                android:id="@+id/intro_image"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_check_24"
+                android:id="@+id/string1_img"
+                android:layout_below="@id/intro_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fast Loan application"
+                android:layout_toRightOf="@id/string1_img"
+                android:layout_below="@id/intro_image"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/pad_size"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_check_24"
+                android:id="@+id/string2_img"
+                android:layout_below="@id/string1_img"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Airtime Purchase"
+                android:layout_toRightOf="@id/string2_img"
+                android:layout_below="@id/string1_img"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/pad_size"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_check_24"
+                android:id="@+id/string3_img"
+                android:layout_below="@id/string2_img"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instant transfer to Mpesa"
+                android:layout_toRightOf="@id/string3_img"
+                android:layout_below="@id/string2_img"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/pad_size"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_baseline_send_24"
+                android:layout_below="@id/string3_img"
+                android:onClick="proceed"
+                android:layout_alignParentEnd="true"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

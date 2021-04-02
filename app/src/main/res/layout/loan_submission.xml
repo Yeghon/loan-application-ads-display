@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/pad_size"
+        android:padding="@dimen/pad_size">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/loan_borrower_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_size"
+                android:text="@string/borrower" />
+
+            <TextView
+                android:id="@+id/loan_borrower_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/pad_size"
+                android:layout_toRightOf="@id/loan_borrower_text"
+                android:text="@string/facebook"
+                android:textAlignment="viewEnd" />
+
+
+            <TextView
+                android:id="@+id/loan_amount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loan_borrower_text"
+                android:layout_marginTop="@dimen/pad_size"
+                android:text="@string/loan_amount" />
+
+            <TextView
+                android:id="@+id/loan_amount_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loan_borrower_value"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/pad_size"
+                android:layout_toRightOf="@id/loan_amount_text"
+                android:text="@string/facebook"
+                android:textAlignment="viewEnd" />
+
+
+            <TextView
+                android:id="@+id/fee_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loan_amount_text"
+
+                android:layout_marginTop="@dimen/pad_size"
+                android:text="@string/fee" />
+
+            <TextView
+                android:id="@+id/fee_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loan_amount_value"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/pad_size"
+                android:layout_toRightOf="@id/fee_text"
+                android:text="@string/facebook"
+                android:textAlignment="viewEnd" />
+
+            <TextView
+                android:id="@+id/coupon_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fee_text"
+                android:layout_marginTop="@dimen/pad_size"
+                android:text="@string/coupon" />
+
+            <TextView
+                android:id="@+id/coupon_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fee_value"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/pad_size"
+                android:layout_toRightOf="@id/coupon_text"
+                android:text="@string/facebook"
+                android:textAlignment="viewEnd" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/coupon_text"
+                android:layout_marginTop="@dimen/pad_size"
+                android:text="@string/agreement" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/agree"
+                android:layout_marginTop="@dimen/pad_size"
+                android:background="@drawable/green_login_round"
+                android:padding="@dimen/pad_size"
+                android:text="@string/apply" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
